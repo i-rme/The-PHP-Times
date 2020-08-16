@@ -1,0 +1,70 @@
+/*	Custom CSS by Raúl
+	The current design is pretty good so improving it is hard
+	but we'll try
+
+	Remove this file to see the before design
+ */
+
+
+
+/* Change footer color and padding/margin */
+footer {
+    padding: 4rem 0;
+    background-color: #1A237E;
+    margin-top: 3rem;
+}
+
+/* Change footer text color */
+footer p {
+    color: #dedede;
+}
+
+/* Slight tint to the menu */
+.header {
+    background: #f6f7ff;
+}
+
+/* Slight tint to the menu items */
+.nav-item .dropdown-menu {
+    background: #f6f7ff;
+}
+
+/* Text color on the text on the right of the menu */
+.nav-right {
+    color: #5C6BC0;
+}
+
+/* Fix round avatar images and blur them */
+.avatar img {
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	height: 100%;
+}
+
+/* Blur main image on hover is cool */
+.card-image:hover {
+	filter: blur(4px);
+	-webkit-filter: blur(4px);
+}
+
+/* Shaky shaky */
+h1.u-text-center:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Source: https://www.w3schools.com/howto/howto_css_shake_image.asp */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
